@@ -1,0 +1,29 @@
+# Sistema operacional
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*~
+
+# Node (caso alguma dependência seja adicionada no futuro)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Variáveis de ambiente e segredos
+.env
+.env.*
+
+# Configurações locais do Claude Code
+.claude/settings.local.json
+
+# Logs e temporários
+*.log
+tmp/
+.cache/

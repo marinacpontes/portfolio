@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lanchonete da Marina · Marina Pontes</title>
+<meta name="description" content="Sistema de pedidos para lanchonete com CRUD completo, edição de ingredientes por unidade e persistência no navegador, feito em JavaScript puro.">
+<meta property="og:title" content="Lanchonete da Marina · Marina Pontes">
+<meta property="og:description" content="Sistema de pedidos para lanchonete com CRUD completo, edição de ingredientes por unidade e persistência no navegador, feito em JavaScript puro.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#F5F3EE">
+<link rel="icon" href="../assets/favicon-32.png?v=2" type="image/png" sizes="32x32">
+<link rel="icon" href="../assets/favicon-192.png?v=2" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="page-detail">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html" aria-label="Marina Pontes: início"><img class="brand-mark" src="../assets/avatar.webp?v=2" width="32" height="32" alt=""><span class="brand-name">Marina Pontes</span></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="../index.html#projetos">Projetos</a>
+      <a href="../index.html#capacidades">Capacidades</a>
+      <a href="../index.html#contato">Contato</a>
+    </nav>
+    <a class="btn btn--small btn--whatsapp" href="https://wa.me/5585986680707?text=Ol%C3%A1%2C%20Marina!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.79-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.19 4.23-9.42 9.43-9.42 2.52 0 4.88.98 6.66 2.76a9.36 9.36 0 0 1 2.76 6.67c0 5.2-4.23 9.42-9.43 9.42M20.07 3.98A11.27 11.27 0 0 0 12.05.66C5.8.66.71 5.75.71 12c0 2 .52 3.95 1.52 5.67L.62 23.5l5.96-1.56a11.3 11.3 0 0 0 5.42 1.38h.01c6.25 0 11.34-5.09 11.34-11.34 0-3.03-1.18-5.88-3.32-8.02"/></svg><span>WhatsApp</span></a>
+  </div>
+</header>
+<main id="conteudo">
+
+<section class="d-hero wrap">
+  <a class="crumb" href="../index.html#projetos"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 10H5m4.5-4.5L5 10l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Todos os projetos</span></a>
+  <div class="d-hero-grid">
+    <div>
+      <p class="eyebrow">Web app · CRUD</p>
+      <h1 class="d-title">Lanchonete da Marina</h1>
+      <p class="d-lead">Sistema de pedidos para lanchonete com CRUD completo, edição de ingredientes por unidade e persistência no navegador, feito em JavaScript puro.</p>
+      <div class="actions">
+        <a class="btn btn--primary btn--lg" href="https://github.com/marinacpontes/lanchonetesistema" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg><span>GitHub</span></a>
+        <a class="btn btn--ghost btn--lg" href="https://lanchonetesistema.vercel.app/" target="_blank" rel="noopener"><span>Demo online</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 5h8v8M15 5 5.5 14.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+    <dl class="d-meta">
+      <div><dt>Tipo</dt><dd><span class="badge badge--rose" title="Trabalho avaliativo de uma disciplina.">Projeto acadêmico</span><small>Trabalho avaliativo de uma disciplina.</small></dd></div>
+      <div><dt>Status</dt><dd><span class="status status--live"><i aria-hidden="true"></i>Demo online</span></dd></div>
+      <div><dt>Categoria</dt><dd>Web app · CRUD</dd></div>
+      <div><dt>Ano</dt><dd>2026</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="d-cover wrap"><div class="cover cover--browser" style="--tint:#FBE0D2;--tint-deep:#F4BFA4">
+    <div class="cover-browser">
+  <div class="mock-browser">
+    <div class="mock-bar" aria-hidden="true"><i></i><i></i><i></i><span>Lanchonete da Marina</span></div>
+    <div class="mock-screen"><img src="../assets/img/lanchonete/cardapio.webp" width="1600" height="1125" alt="Lanchonete da Marina: interface no desktop" fetchpriority="high" decoding="async"></div>
+  </div></div>
+    <div class="cover-phone-solo">
+  <div class="mock-phone"><div class="mock-phone-screen"><img src="../assets/img/lanchonete/m-editar.webp" width="780" height="1688" alt="Lanchonete da Marina: interface no celular" fetchpriority="high" decoding="async"></div></div></div>
+  </div></section>
+
+<section class="d-section wrap">
+  <h2 class="d-h2">Objetivo e proposta</h2>
+  <div class="d-prose"><p>Trabalho da 2ª avaliação da disciplina Código de Alta Performance Web: um fluxo de pedido completo, do nome do cliente à confirmação, com as quatro operações de um CRUD e sem frameworks.</p><p>O cliente monta o pedido pelo cardápio, ajusta cada lanche do seu jeito e finaliza com um resumo detalhado.</p></div>
+</section>
+
+<section class="d-section wrap">
+  <h2 class="d-h2">Funcionalidades</h2>
+  <ol class="features">
+    <li class="feature reveal"><span class="feature-n">01</span><h3>Cardápio</h3><p>Hambúrgueres, cachorro-quente, porções e bebidas, com controle de quantidade (+/−) direto em cada card.</p></li><li class="feature reveal"><span class="feature-n">02</span><h3>Seu pedido</h3><p>Tabela com quantidade e subtotal por item, total geral e botão de finalizar.</p></li><li class="feature reveal"><span class="feature-n">03</span><h3>Ingredientes por unidade</h3><p>Cada unidade de um lanche pode ser editada separadamente. Ingredientes base, como pão e batata, não aparecem como opção de remoção.</p></li><li class="feature reveal"><span class="feature-n">04</span><h3>Remoção com confirmação</h3><p>Excluir um item pede confirmação antes de alterar o pedido.</p></li><li class="feature reveal"><span class="feature-n">05</span><h3>Persistência</h3><p>Nome do cliente, itens e observações ficam salvos no navegador e sobrevivem a recarregar a página.</p></li><li class="feature reveal"><span class="feature-n">06</span><h3>Responsivo</h3><p>Layout que se adapta ao celular.</p></li>
+  </ol>
+</section>
+
+
+
+<section class="d-section wrap">
+  <h2 class="d-h2">Destaques técnicos</h2>
+  <div class="d-split">
+    <ul class="checks checks--lg"><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10.5 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>HTML semântico e JavaScript sem dependências, separados em estrutura, estilo e lógica.</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10.5 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Delegação de eventos para os botões do cardápio e da tabela, que são renderizados dinamicamente.</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10.5 3 3 7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Publicado na Vercel.</span></li></ul>
+    <div class="tech-box">
+      <h3>Tecnologias</h3>
+      <ul class="chips chips--lg"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>LocalStorage</li><li>Vercel</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="d-section d-gallery wrap" id="galeria">
+  <h2 class="d-h2">Galeria</h2>
+  
+  <div class="gallery-desktop">
+    <figure class="shot reveal">
+      <a href="../assets/img/lanchonete/cardapio.webp" data-lightbox="g" data-caption="Cardápio com quantidades selecionadas" aria-label="Ampliar: Cardápio com quantidades selecionadas">
+  <div class="mock-browser">
+    <div class="mock-bar" aria-hidden="true"><i></i><i></i><i></i><span>Lanchonete da Marina</span></div>
+    <div class="mock-screen"><img src="../assets/img/lanchonete/cardapio.webp" width="1600" height="1125" alt="Cardápio com quantidades selecionadas" loading="lazy" decoding="async"></div>
+  </div><span class="zoom"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8.5 3.5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm3.6 8.6L16.5 16.5M8.5 6.5v4m-2-2h4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></a>
+      <figcaption>Cardápio com quantidades selecionadas</figcaption></figure><figure class="shot reveal">
+      <a href="../assets/img/lanchonete/pedido.webp" data-lightbox="g" data-caption="Resumo do pedido com subtotais e total" aria-label="Ampliar: Resumo do pedido com subtotais e total">
+  <div class="mock-browser">
+    <div class="mock-bar" aria-hidden="true"><i></i><i></i><i></i><span>Lanchonete da Marina</span></div>
+    <div class="mock-screen"><img src="../assets/img/lanchonete/pedido.webp" width="1600" height="1125" alt="Resumo do pedido com subtotais e total" loading="lazy" decoding="async"></div>
+  </div><span class="zoom"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8.5 3.5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm3.6 8.6L16.5 16.5M8.5 6.5v4m-2-2h4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></a>
+      <figcaption>Resumo do pedido com subtotais e total</figcaption></figure><figure class="shot reveal">
+      <a href="../assets/img/lanchonete/editar.webp" data-lightbox="g" data-caption="Edição de ingredientes por unidade" aria-label="Ampliar: Edição de ingredientes por unidade">
+  <div class="mock-browser">
+    <div class="mock-bar" aria-hidden="true"><i></i><i></i><i></i><span>Lanchonete da Marina</span></div>
+    <div class="mock-screen"><img src="../assets/img/lanchonete/editar.webp" width="1600" height="1125" alt="Edição de ingredientes por unidade" loading="lazy" decoding="async"></div>
+  </div><span class="zoom"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8.5 3.5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm3.6 8.6L16.5 16.5M8.5 6.5v4m-2-2h4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></a>
+      <figcaption>Edição de ingredientes por unidade</figcaption></figure><figure class="shot reveal">
+      <a href="../assets/img/lanchonete/confirmado.webp" data-lightbox="g" data-caption="Pedido confirmado" aria-label="Ampliar: Pedido confirmado">
+  <div class="mock-browser">
+    <div class="mock-bar" aria-hidden="true"><i></i><i></i><i></i><span>Lanchonete da Marina</span></div>
+    <div class="mock-screen"><img src="../assets/img/lanchonete/confirmado.webp" width="1600" height="766" alt="Pedido confirmado" loading="lazy" decoding="async"></div>
+  </div><span class="zoom"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8.5 3.5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm3.6 8.6L16.5 16.5M8.5 6.5v4m-2-2h4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></a>
+      <figcaption>Pedido confirmado</figcaption></figure>
+  </div>
+  
+  <div class="gallery-mobile">
+    <figure class="shot shot--phone reveal">
+      <a href="../assets/img/lanchonete/m-inicio.webp" data-lightbox="g" data-caption="Tela inicial no celular" aria-label="Ampliar: Tela inicial no celular">
+  <div class="mock-phone"><div class="mock-phone-screen"><img src="../assets/img/lanchonete/m-inicio.webp" width="780" height="1688" alt="Tela inicial no celular" loading="lazy" decoding="async"></div></div></a>
+      <figcaption>Tela inicial no celular</figcaption></figure><figure class="shot shot--phone reveal">
+      <a href="../assets/img/lanchonete/m-cardapio.webp" data-lightbox="g" data-caption="Cardápio no celular" aria-label="Ampliar: Cardápio no celular">
+  <div class="mock-phone"><div class="mock-phone-screen"><img src="../assets/img/lanchonete/m-cardapio.webp" width="780" height="1688" alt="Cardápio no celular" loading="lazy" decoding="async"></div></div></a>
+      <figcaption>Cardápio no celular</figcaption></figure><figure class="shot shot--phone reveal">
+      <a href="../assets/img/lanchonete/m-editar.webp" data-lightbox="g" data-caption="Edição de ingredientes no celular" aria-label="Ampliar: Edição de ingredientes no celular">
+  <div class="mock-phone"><div class="mock-phone-screen"><img src="../assets/img/lanchonete/m-editar.webp" width="780" height="1688" alt="Edição de ingredientes no celular" loading="lazy" decoding="async"></div></div></a>
+      <figcaption>Edição de ingredientes no celular</figcaption></figure>
+  </div>
+</section>
+
+<section class="d-section wrap">
+  <aside class="note reveal">
+    <h2>Sobre este projeto e estas imagens</h2>
+    <p>Projeto acadêmico. A demonstração está publicada na Vercel e funciona no navegador, sem backend.</p><p>As capturas foram feitas localmente com um pedido de exemplo. A imagem do pedido confirmado vem do repositório (é um aviso nativo do navegador).</p>
+  </aside>
+</section>
+
+<nav class="pager wrap" aria-label="Outros projetos">
+  <a class="pager-link" href="ai-course-creator.html"><span class="pager-dir"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 10H5m4.5-4.5L5 10l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Anterior</span><strong>AI Course Creator</strong></a>
+  <a class="pager-link pager-link--next" href="banco-inter.html"><span class="pager-dir">Próximo <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11m-4.5-4.5L15 10l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><strong>Banco Inter — Redesign</strong></a>
+</nav>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© 2026 Marina Carneiro Pontes</span>
+    <span class="footer-links"><a href="https://wa.me/5585986680707?text=Ol%C3%A1%2C%20Marina!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener">WhatsApp</a><a href="mailto:marinadesenvolvedora@outlook.com">E-mail</a><a href="https://www.instagram.com/marina.devs/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@marina.devs" target="_blank" rel="noopener">TikTok</a></span>
+  </div>
+</footer>
+<dialog class="lightbox" id="lightbox" aria-label="Visualizar imagem">
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lb-btn lb-close" type="button" aria-label="Fechar">×</button>
+  <button class="lb-btn lb-prev" type="button" aria-label="Imagem anterior">‹</button>
+  <button class="lb-btn lb-next" type="button" aria-label="Próxima imagem">›</button>
+</dialog>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>
